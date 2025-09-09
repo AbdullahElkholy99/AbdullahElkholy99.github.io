@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header-area" id="home">
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <a href="#home" class="site-logo">MyLogo</a>
+
+            <!-- site menu/nav -->
+            <ul class="nav-menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler" aria-label="Toggle navigation">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm <span>ِAbdullah Ali </span></h1>
+            <h2>Full-Stack .NET Developer</h2>
+            <p>
+              I build modern, responsive, and scalable web applications that
+              solve real-world problems.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn primary">View Projects</a>
+              <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="/Images/Abdullah.png" alt="My Photo" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== About Section ===== -->
+      <section id="about" class="about-section">
+        <div class="container about-container">
+          <br />
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hi 👋 I'm <strong>Your Name</strong>, a passionate
+              <strong>Full-Stack Developer</strong> who loves building modern,
+              scalable, and user-friendly web applications. I have experience in
+              <strong>JavaScript, C#, ASP.NET, and React</strong>, and I enjoy
+              learning new technologies to improve my craft.
+            </p>
+            <p>
+              When I’m not coding, you’ll find me reading tech blogs, exploring
+              new tools, or sharing knowledge with the developer community.
+            </p>
+            <a
+              href="/Files/AbdullahAliElkholyResume.pdf"
+              class="btn primary"
+              download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Projects Section ===== -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+
+          <!-- Project 1 -->
+          <div class="project-row">
+            <div class="project-image">
+              <img src="/Images/Abdullah.png" alt="Project 1" />
+            </div>
+            <div class="project-text">
+              <h3>Project One</h3>
+              <p>A modern web application built with React and ASP.NET API.</p>
+              <button class="btn primary open-modal" data-modal="modal1">
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-row reverse">
+            <div class="project-text">
+              <h3>Project Two</h3>
+              <p>A sales billing system using WinForms and SQLite.</p>
+              <button class="btn primary open-modal" data-modal="modal2">
+                View Details
+              </button>
+            </div>
+            <div class="project-image">
+              <img src="/Images/Abdullah.png" alt="Project 2" />
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- ===== Modal 1 ===== -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Project One</h2>
+          <p>
+            This is a modern web application built with React (frontend) and
+            ASP.NET API (backend). It includes authentication, responsive UI,
+            and real-time chat using SignalR.
+          </p>
+          <a
+            href="https://github.com/your-repo/project1"
+            target="_blank"
+            class="btn secondary"
+            >GitHub Repo</a
+          >
+          <a
+            href="https://live-demo-link.com"
+            target="_blank"
+            class="btn primary"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+
+      <!-- ===== Modal 2 ===== -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Project Two</h2>
+          <p>
+            This project is a Sales Billing System built with WinForms + SQLite.
+            It allows invoice creation, customer/product management, and
+            printing formatted bills.
+          </p>
+          <a
+            href="https://github.com/your-repo/project2"
+            target="_blank"
+            class="btn secondary"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+
+      <section id="contact" class="container section">
+        <h3>Contact</h3>
+        <p>Email: your.email@example.com</p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+  </body>
+</html>
